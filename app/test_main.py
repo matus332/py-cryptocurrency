@@ -22,6 +22,7 @@ def test_to_do_nothing_with_105_procent(mocked_rate: None) -> None:
 
     assert cryptocurrency_action(1) == "Do nothing"
 
+
 @patch("app.main.get_exchange_rate_prediction")
 def test_to_do_nothing_with_95_procent(mocked_rate: None) -> None:
     mocked_rate.return_value = 0.95
